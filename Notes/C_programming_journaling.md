@@ -8,7 +8,7 @@
 
 <references: link/books/media...>
 
-**content**
+### **content**
 
 - [Compound literals](#compound-literals)
 - [Designated structure](#designated-structure)
@@ -19,7 +19,7 @@
 
 9/11/16
 
-##### Undeclared array#####
+### Undeclared array###
 
 >  In C, at least back in the old days, variable declarations have to <u>come at the top of the block</u>. C++ is different in that regard.
 
@@ -30,7 +30,7 @@
 
 
 
-##### Using boolean value in C#####
+### Using boolean value in C###
 
 ```c
 // option 1: giving a type a new name
@@ -57,7 +57,7 @@ typedef struct my_struct_type my_short_type_t;
 
 
 
-##### Designated structure#####
+### Designated structure###
 
 ```c
 struct date today = { .year = 2016, .month = 12, .day = 23 }; 
@@ -77,7 +77,7 @@ struct date today = { 12, 23 }
 
 
 
-##### Compound literals#####
+### Compound literals###
 
 ```c
 today = (struct date) {12, 1, 2014};
