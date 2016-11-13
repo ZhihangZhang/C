@@ -42,8 +42,7 @@ typedef int bool; // using bool instead of int
 #define false 0
 
 // option 2: include library (C99)
-#include <stdbool.h> // M$ VS C89 or C90
-
+#include <stdbool.h> // M$ VS 2012 C89
 ```
 
 - typedef is used to give a new name to represent the old type throughout the program. 
