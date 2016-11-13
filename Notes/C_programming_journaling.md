@@ -13,7 +13,7 @@
 - [Compound literals](#compound-literals)
 - [Designated structure](#designated-structure)
 - [Undeclared array](#undeclared-array)
-- [Using boolean value in C](#using-boolean-value-in-C)
+- [Using boolean value in C](#using-boolean-value-in-c)
 
 ----
 
