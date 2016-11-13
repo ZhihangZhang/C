@@ -11,7 +11,7 @@
 ### **content**
 
 - [Compound literals](#compound-literals)
-- [Designated structure](#designated-structure)
+- [Designated initializer](#designated-initializer)
 - [Undeclared array](#undeclared-array)
 - [Using boolean value in C](#using-boolean-value-in-c)
 
@@ -57,7 +57,7 @@ typedef struct my_struct_type my_short_type_t;
 
 
 
-### Designated structure###
+### Designated initializer###
 
 ```c
 struct date today = { .year = 2016, .month = 12, .day = 23 }; 
