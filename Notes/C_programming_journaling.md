@@ -30,7 +30,7 @@
 
 
 
-##### Using boolean value in C
+##### Using boolean value in C#####
 
 ```c
 // option 1: giving a type a new name
