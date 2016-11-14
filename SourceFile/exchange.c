@@ -51,8 +51,8 @@ int main (void){
 		{23, 59, 59},
 		{11, 12, 2016}
 	};
-	
-	
+
+
 	// event.sdate = dateUpdate (event.sdate);
 	// event.stime = timeUpdate (event.stime);
 	event = clockKeeper(event);
@@ -63,7 +63,7 @@ int main (void){
 	dayOfDate(event.sdate);
 
 	system("PAUSE");
-	return ;
+	return 0;
 }
 
 
@@ -76,7 +76,7 @@ struct date dateUpdate(struct date d){
 
 	struct date t;
 
-	if( d.day != numberOfDays(d) ){ 
+	if( d.day != numberOfDays(d) ){
 		t.day   = d.day + 1;
 		t.month = d.month;
 		t.year  = d.year;
@@ -102,7 +102,7 @@ struct date dateUpdate(struct date d){
 int numberOfDays (struct date d){  // a copy of structure (unlike arrays)
 
 	const int LeapYearDaysFeb = 29;
-	const int daysPerMonth[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; 
+	const int daysPerMonth[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
 	if( d.month == 2 && isLeapYear(d.year) ){
 		return LeapYearDaysFeb;
@@ -136,13 +136,13 @@ struct time timeUpdate(struct time ct){
 	const int SECONDS = 60;
 	const int HOURS = 24;
 	const int MINUTES = 60;
-	
+
 	ct.seconds++;
 
 	if(ct.seconds == SECONDS){
 		ct.seconds = 0;
 		ct.minutes++;
-		
+
 		if(ct.minutes == MINUTES){
 			ct.minutes = 0;
 			ct.hour++;
@@ -203,8 +203,8 @@ void dayOfDate(struct date d){
 	dayNum = (getN(d) - 621049) % 7;
 
 	printf("%c%c%c\n\n", name[dayNum].nameOfDay[0], name[dayNum].nameOfDay[1], name[dayNum].nameOfDay[2]);
-	
-	
+
+
 }
 
 
